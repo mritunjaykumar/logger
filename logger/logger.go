@@ -129,6 +129,7 @@ func addStackTrace(logLevel string) {
 	}
 
 	if nst {
+		fmt.Println("going to disable stacktrace")
 		zapLogger = GetZapLogger().WithOptions()
 		return
 	}
